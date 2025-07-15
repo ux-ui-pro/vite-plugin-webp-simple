@@ -1,0 +1,71 @@
+{
+  "name": "vite-plugin-webp-simple",
+  "version": "1.0.0",
+  "description": "",
+  "author": "ux-ui.pro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ux-ui-pro/vite-plugin-webp-simple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ux-ui-pro/vite-plugin-webp-simple/issues"
+  },
+  "homepage": "https://github.com/ux-ui-pro/vite-plugin-webp-simple",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "vite build",
+    "lint:js": "eslint src/**/*.{ts,js}",
+    "lint:fix:js": "eslint src/**/*.{ts,js} --fix",
+    "format:js": "prettier --write src/**/*.{ts,js}",
+    "lint:fix": "yarn lint:fix:js && yarn format:js"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.es.js"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "@eslint/js": "9.31.0",
+    "@rollup/plugin-terser": "0.4.4",
+    "@types/node": "24.0.14",
+    "@typescript-eslint/eslint-plugin": "8.37.0",
+    "@typescript-eslint/parser": "8.37.0",
+    "eslint": "9.31.0",
+    "eslint-config-prettier": "10.1.5",
+    "eslint-import-resolver-typescript": "4.4.4",
+    "eslint-plugin-import": "2.32.0",
+    "globals": "16.3.0",
+    "prettier": "3.6.2",
+    "rimraf": "6.0.1",
+    "typescript": "5.8.3",
+    "vite": "7.0.4",
+    "vite-plugin-dts": "4.5.4"
+  },
+  "peerDependencies": {
+    "sharp": "0.34.3"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "webp",
+    "sharp",
+    "image",
+    "compression",
+    "conversion",
+    "vite plugin",
+    "image optimization",
+    "webp converter",
+    "vite webp"
+  ]
+}
