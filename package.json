@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-webp-simple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "ux-ui.pro",
   "license": "MIT",
@@ -53,6 +53,9 @@
     "vite-plugin-dts": "4.5.4"
   },
   "peerDependencies": {
+    "sharp": "0.34.3"
+  },
+  "optionalDependencies": {
     "sharp": "0.34.3"
   },
   "keywords": [
